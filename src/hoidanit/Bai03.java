@@ -7,7 +7,8 @@ public class Bai03 {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Canh hinh lap phuong: ");
 		int canh = scanner.nextInt();
-		System.out.println("The tich: " + Math.pow(canh, 3));
+		double thetich = Math.pow(canh, 3);
+		System.out.println("The tich: " + thetich);
 		scanner.close();
 	}
 }
