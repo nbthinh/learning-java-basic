@@ -11,6 +11,7 @@ public class Bai02 {
 		int b = scanner.nextInt();
 		System.out.println("Nhap c: ");
 		int c = scanner.nextInt();
+		System.out.printf("Giai phuong trinh bac 2: %dx^2 + %dx + %d = 0", a, b, c);
 		if (a == 0) {
 			if (b == 0 && c == 0) {
 				System.out.println("Phuong trinh co vo so nghiem");
