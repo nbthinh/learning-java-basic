@@ -1,5 +1,6 @@
 package Lab02;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Bai04 {
@@ -76,23 +77,21 @@ public class Bai04 {
 		scanner.close();
 	}
 
+// Arrays.sort(our_array)
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Lua chon cua ban la: ");
-		int x = scanner.nextInt();
-		switch (x) {
-		case 1:
-			bai01();
-			break;
-		case 2:
-			bai02();
-			break;
-		case 3:
-			bai03();
-			break;
-		default:
-			System.exit(0);
+		int[] clubs = { 5, 10, 1, 16, 3 };
+//		Arrays.sort(clubs);
+//		System.out.println("clubs = " + Arrays.toString(clubs));
+		for (int i = 0; i < clubs.length - 1; i++) {
+			for (int j = i + 1; j < clubs.length; j++) {
+				if (clubs[i] > clubs[j]) {
+					int temp = clubs[j];
+					clubs[j] = clubs[i];
+					clubs[i] = temp;
+				}
+			}
 		}
-		scanner.close();
+		System.out.println("clubs = " + Arrays.toString(clubs));
+
 	}
 }
